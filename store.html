@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magazin Electronic</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="magazin.html">Magazin</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Homepage -->
+  <section id="acasa">
+    <h1>Bine ați venit la Magazinul Electronic!</h1>
+    <p>Oferim o gamă variată de produse electronice de înaltă calitate.</p>
+  </section>
+
+  <!-- Store page -->
+  <section id="magazin">
+    <h2>Magazin</h2>
+    <ul>
+      <li>
+        <img src="imagini/produs1.jpg" alt="Produs 1">
+        <h3>Produs 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus iaculis nulla, quis tristique metus tempor eget.</p>
+        <p>Preț: 100 lei</p>
+        <button>Achiziționează</button>
+      </li>
+      <li>
+        <img src="imagini/produs2.jpg" alt="Produs 2">
+        <h3>Produs 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus iaculis nulla, quis tristique metus tempor eget.</p>
+        <p>Preț: 150 lei</p>
+        <button>Achiziționează</button>
+      </li>
+      <!-- Add more product items here -->
+    </ul>
+  </section>
+
+  <!-- Contact page -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Pentru orice întrebări sau nelămuriri, vă rugăm să ne contactați folosind formularul de mai jos sau prin telefon sau email.</p>
+    <form action="trimitere.php" method="POST">
+      <label for="nume">Nume:</label>
+      <input type="text" id="nume" name="nume" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mesaj">Mesaj:</label>
+      <textarea id="mesaj" name="mesaj" required></textarea>
+
+      <button type="submit">Trimite</button>
+    </form>
+    <div class="contact-details">
+      <h3>Detalii de contact:</h3>
+      <p>Telefon: 0123456789</p>
+      <p>Email: contact@magazinelectronic.ro</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Magazin Electronic. Toate drepturile
